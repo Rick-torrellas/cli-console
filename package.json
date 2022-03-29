@@ -1,0 +1,31 @@
+{
+  "name": "cli-console",
+  "version": "1.0.0",
+  "description": "A console to comment out a command line interface (cli).",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "eslint": "eslint .",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rick-torrellas/core-cli-console"
+  },
+  "bugs": {
+    "url": "https://github.com/Rick-torrellas/core-cli-console/issues"
+  },
+  "keywords": [],
+  "author": "Ricardo Torrellas <ricardo.torrejas@gmail.com> (https://github.com/Rick-torrellas)",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.1",
+    "rollup": "^2.70.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
