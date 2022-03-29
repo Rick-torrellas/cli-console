@@ -1,12 +1,14 @@
 {
-  "name": "cli-console",
-  "version": "1.0.0",
+  "name": "@core_/cli-console",
+  "version": "1.1.0",
   "description": "A console to comment out a command line interface (cli).",
   "main": "./dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "eslint": "eslint .",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepublish": "npm run prettier && npm run eslint && npm run build",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
