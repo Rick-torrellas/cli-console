@@ -1,1 +1,2 @@
-export {default} from './cli-console';
+import cliconsole from "./cliconsole.js";
+export default cliconsole;

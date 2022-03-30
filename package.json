@@ -1,14 +1,16 @@
 {
   "name": "@core_/cli-console",
-  "version": "1.1.0",
+  "version": "1.1.10",
   "description": "A console to comment out a command line interface (cli).",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "eslint": "eslint .",
     "prettier": "prettier --write .",
-    "prepublish": "npm run prettier && npm run eslint && npm run build",
-    "publish": "npm publish"
+    "prepublicar": "npm run prettier && npm run eslint && npm run build",
+    "publicar": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "author": "Ricardo Torrellas <ricardo.torrejas@gmail.com> (https://github.com/Rick-torrellas)",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
@@ -28,6 +31,6 @@
     "rollup": "^2.70.1"
   },
   "dependencies": {
-    "chalk": "^4.1.0"
+    "chalk": "^5.0.1"
   }
 }
